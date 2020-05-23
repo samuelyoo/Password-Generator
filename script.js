@@ -1,21 +1,19 @@
-// Assignment Code
+// Assign values 
 var generateBtn = document.querySelector("#generate");
 var myLowercase = 'abcdefghijklmnopqrstuvwxyz';
 var myUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var myNumber = '1234567890';
 var mySpecial = '!@#$%^&*()_+=-~'
-var passLength = 0;
-var myPassword ='';
-var temppass ='';
-
 
 // Write password to the #password input
 function writePassword() {
   console.log("we are in the function!");
-  // var password = generatePassword();
+  // Assign the value of passwords (These values are assign when user generate password)
+  var myPassword ='';
+  var passLength = 0;
+  var temppass ='';
 
-
-  // Define the values of password chracters
+  // Define the values of password chracters (ask user to choose types of characters that include)
   var passwordText = document.querySelector("#password");
   
   var askLowercase = confirm('Do you want lowercase characters?');
@@ -42,39 +40,32 @@ function writePassword() {
   }
   console.log(passLength);
 
+   // Set up password Length between 8 to 128
   passLength = prompt('How many charachters do you wnat? (choose bettween 8 and 128)')
   
   // Assign passLength to Number from String
   passLength = Number(passLength);
 
-  // console.log(askLowercase);
-  // console.log(askUppercase);
-  // console.log(askNumber);
-  // console.log(askSpecial);
-  // console.log(passLength);
 
-  if(passLength >=8 && passLength <=128){
-    for(let i=0; i<passLength; i++){
-    myPassword += temppass[Math.floor(Math.random(passLength)*temppass.length)];
-    } 
+  // if condition for chekcing types of characters are included or not
+  if(temppass){
+    // if condition for password lengths are under condition
+    if(passLength >=8 && passLength <=128){
+      // for loop for creating random number 
+      for(let i=0; i<passLength; i++){
+      myPassword += temppass[Math.floor(Math.random(passLength)*temppass.length)];
+      }
+    }else{// msg for requirement.
+      myPassword = "Password length must be between 8 to 128 characters. Try Again!"
+    }
+  }else{// msg for requirement.
+    myPassword = "You need to choose at least one type of charachters for your Password!!"
   }
+
+
   passwordText.value = myPassword;
 
 }
  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-//confirm / or prompt
-
-// var isuppercas = prompt('do you want uppercas?)
-// console.log(isuppercas);
-//if(isuppercase ==true){
-  // generate password using uppercase
-//}
-
-//passwordText.value= " this will be your password"
-
-
