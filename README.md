@@ -10,6 +10,7 @@ The application will ask criteria to add lowercase letters, uppercase letters, n
 ### Screen Shot
 
 ![Screenshot](Assets/screenshot.png)
+<img src="Assets/screenshotm.jpeg" width="200">
 ![Screenshotm](Assets/screenshotm.jpeg | width=100)
 
 
