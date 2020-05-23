@@ -20,26 +20,25 @@ function writePassword() {
   
   var askLowercase = confirm('Do you want lowercase characters?');
   if(askLowercase){
-    temppass = temppass + askLowercase;
+    temppass += myLowercase;
   }
   console.log(askLowercase);
 
   var askUppercase = confirm('Do you want uppercase characters?');
   if(askUppercase){
-    temppass += askUppercase;
+    temppass += myUppercase;
   }
   console.log(askUppercase);
-  console.log(temppass);
 
   var askNumber = confirm('Do you want numbers?');
   if(askNumber){
-    temppass += askNumber;
+    temppass += myNumber;
   }
   console.log(askNumber);
 
   var askSpecial = confirm('Do you want special characters?');
   if(askSpecial){
-    temppass += askSpecial;
+    temppass += mySpecial;
   }
   console.log(passLength);
 
