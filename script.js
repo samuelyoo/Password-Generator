@@ -41,7 +41,7 @@ function writePassword() {
   console.log(passLength);
 
    // Set up password Length between 8 to 128
-  passLength = prompt('How many charachters do you wnat? (choose bettween 8 and 128)')
+  passLength = prompt('How many charachters do you want? (choose bettween 8 and 128)')
   
   // Assign passLength to Number from String
   passLength = Number(passLength);
