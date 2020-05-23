@@ -17,8 +17,8 @@ The application will ask criteria to add lowercase letters, uppercase letters, n
 To use this app you can click : [here](https://samuelyoo.github.io/Password-Generator/index.html)
 
 
-#### Usage
-When user click generate password button, then the application will have alerts pop up on the page , please follow the alerts (clicking ok means yes to the prompt) and then enter the desired password length.
+### Usage
+When user click the generate password button, then the application will have alerts pop up on the page , please follow the alerts (clicking ok means yes to the prompt) and then enter the desired password length.
 Finally, the secure password will display in the text box.
 
 
@@ -34,4 +34,4 @@ The HTML and CSS was provided by [Triology Education Services, a 2U, Inc. brand]
 
 #### Licence
 MIT license
-copy right (c) Zahra Ali Aghazadeh
+copy right (c) Samuel Yoo
